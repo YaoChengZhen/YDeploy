@@ -1,0 +1,6 @@
+framework module Pods_YDeploy_Example {
+  umbrella header "Pods-YDeploy_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

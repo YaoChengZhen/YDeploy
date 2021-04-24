@@ -9,7 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'YDeploy'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YDeploy.'
+  s.summary          = '项目配置模块.'
+
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO:配置模块，域名等、主题颜色等的配置,被每个业务模块所依赖.
                        DESC
 
   s.homepage         = 'https://github.com/YaoChengZhen/YDeploy'
@@ -29,8 +30,10 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'YDeploy/Classes/**/*'
+  s.dependency 'YUtilCore', '~> 0.0.2'
   
   # s.resource_bundles = {
   #   'YDeploy' => ['YDeploy/Assets/*.png']
