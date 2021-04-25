@@ -19,8 +19,9 @@ import SwiftyJSON
 public class Web_Vc: Base_Vc {
     
     /****************************Storyboard UI设置区域****************************/
-    
     @IBOutlet weak var web_Wb: UIWebView!
+    
+
     public var bridge:WebViewJavascriptBridge?
     /*----------------------------   自定义属性区域    ----------------------------*/
    public var isReload:Bool = false
@@ -34,7 +35,6 @@ public class Web_Vc: Base_Vc {
     /**************************** 以下是方法区域 ****************************/
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override public func viewWillAppear(_ animated: Bool) {
@@ -68,7 +68,7 @@ public class Web_Vc: Base_Vc {
     override public func setupUI() {
         self.tabBarController?.tabBar.isHidden = true
         /// 禁止twebview长按
-        //        self.web_Wb.dataDetectorTypes = UIDataDetectorTypes.link
+        //self.web_Wb.dataDetectorTypes = UIDataDetectorTypes.link
         WebViewJavascriptBridge.enableLogging()
         self.bridge = WebViewJavascriptBridge(forWebView: self.web_Wb)
         self.bridge?.setWebViewDelegate(self)

@@ -71,7 +71,7 @@ public extension UIStoryboard {
         return viewController
     }
     /// 通过字符串 加载模块中的类
-    static public func instantiateViewControllerByStr<T: Base_Vc>(storyboardName:  String) -> T {
+    public static  func instantiateViewControllerByStr<T: Base_Vc>(storyboardName:  String) -> T {
         let podBundle = Bundle(for: T.self)
         guard let bundleURL = podBundle.url(forResource: storyboardName, withExtension: "bundle") else {
             fatalError("\(T.storyboardIdentifier) 在 \(storyboardName) 加载路径失败")

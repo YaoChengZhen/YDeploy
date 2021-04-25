@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import EmptyDataView
+import YEmptyDataView
 
 open class Empty_TVc: Base_Vc  {
     ///是否要显示空列表界面
@@ -32,22 +32,22 @@ open class Empty_TVc: Base_Vc  {
     
     
 }
-//extension Empty_TVc :EmptyDelegate{
-//    /**
-//     配置是否允许显示空视图
-//
-//     - Parameter scrollView: 目标视图
-//
-//     - Returns:  是否显示
-//     - true 显示 (default)
-//     - false 不显示
-//
-//     */
-//    open func shouldDisplay(emptyView scrollView: UIScrollView) -> Bool{
-//        return self.showEmptyView
-//    }
-//    open func didTap(emptyView scrollView: UIScrollView, button: UIButton){
-//
-//    }
-//}
+extension Empty_TVc :EmptyDelegate{
+    /**
+     配置是否允许显示空视图
+
+     - Parameter scrollView: 目标视图
+
+     - Returns:  是否显示
+     - true 显示 (default)
+     - false 不显示
+
+     */
+    open func shouldDisplay(emptyView scrollView: UIScrollView) -> Bool{
+        return self.showEmptyView
+    }
+    open func didTap(emptyView scrollView: UIScrollView, button: UIButton){
+
+    }
+}
 

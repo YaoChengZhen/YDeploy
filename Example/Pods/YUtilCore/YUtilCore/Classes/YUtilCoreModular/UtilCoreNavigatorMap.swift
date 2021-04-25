@@ -59,7 +59,7 @@ public struct UtilCoreNavigatorMap {
         }
         /// 跳转到web 界面
         navigator.register("http://<path:_>") { url, values ,context in
-            let webVc:Web_Vc = UIStoryboard.instantiateViewControllerByStr(storyboardName: "UtilCore")
+            let webVc:Web_Vc = UIStoryboard.instantiateViewControllerByStr(storyboardName: "YUtilCore")
             webVc.webUrl = url.urlStringValue
             webVc.webTitle = url.queryParameters["title"]
             if let isshowloading = url.queryParameters["isloading"] ,isshowloading == "0" {
@@ -71,7 +71,7 @@ public struct UtilCoreNavigatorMap {
         }
         /// 跳转到web 界面
         navigator.register("https://<path:_>") { url, values ,context in
-            let webVc:Web_Vc = UIStoryboard.instantiateViewControllerByStr(storyboardName: "UtilCore")
+            let webVc:Web_Vc = UIStoryboard.instantiateViewControllerByStr(storyboardName: "YUtilCore")
             webVc.webUrl = url.urlStringValue
             webVc.webTitle = url.queryParameters["title"]
             if let isshowloading = url.queryParameters["isloading"] ,isshowloading == "0" {
@@ -83,7 +83,7 @@ public struct UtilCoreNavigatorMap {
         }
         /// 跳转到web 界面
         navigator.register("scanvc".formatScheme()) { url, values ,context in
-            let scanVc:Scan_Vc = UIStoryboard.instantiateViewControllerByStr(storyboardName: "UtilCore")
+            let scanVc:Scan_Vc = UIStoryboard.instantiateViewControllerByStr(storyboardName: "YUtilCore")
             return scanVc
         }
         

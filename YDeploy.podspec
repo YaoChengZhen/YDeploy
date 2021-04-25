@@ -33,7 +33,7 @@ TODO:配置模块，域名等、主题颜色等的配置,被每个业务模块�
   s.swift_version = '5.0'
 
   s.source_files = 'YDeploy/Classes/**/*'
-  s.dependency 'YUtilCore', '~> 0.0.2'
+  s.dependency 'YUtilCore', '~> 0.0.3'
   
   # s.resource_bundles = {
   #   'YDeploy' => ['YDeploy/Assets/*.png']
